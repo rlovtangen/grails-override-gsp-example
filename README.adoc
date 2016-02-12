@@ -1,0 +1,14 @@
+Example of issue https://github.com/grails/grails-core/issues/9689
+
+Start application:
+....
+cd myapp
+./gradlew bootRun
+....
+
+Open http://localhost:8080/login/auth
+
+Expects to see `auth.gsp` from myplugin, but sees `auth.gsp` from spring-security-core.
+
+Then switch to branch `overrideInApp` and run application again.
+This time you will see `auth.gsp` from application.
