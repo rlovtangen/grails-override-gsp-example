@@ -10,6 +10,7 @@ class MypluginGrailsPlugin extends Plugin {
     def pluginExcludes = [
         "grails-app/views/error.gsp"
     ]
+    List loadAfter = ['springSecurityCore']
 
     // TODO Fill in these fields
     def title = "Myplugin" // Headline display name of the plugin
